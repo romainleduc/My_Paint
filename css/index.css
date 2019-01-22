@@ -1,0 +1,96 @@
+body 
+{
+    background-color: rgb(80, 77, 62);
+}
+
+canvas
+{
+    margin-top: 200px;
+    margin-left: 425px;
+    border: solid 20px #b88c4c;
+    background-color: black;
+}
+
+#group-canvas canvas
+{
+    display: inline-block;
+}
+
+#tools
+{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    position: absolute;
+    margin-top: -700px;
+    width: 100px;
+    
+}
+
+#tools ul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#tools img
+{
+    height: 22px;
+    width: auto;
+}
+
+#group-layers
+{
+    background-color: white;
+    min-height: 280px;;
+    width: 325px;
+}
+
+#layers
+{
+    background-color: #b88c4c;
+    position: absolute;
+    border-radius: 1%;
+    width: 325px;
+    min-height: 310px;
+    margin-top: -475px;
+    margin-left: 1425px;
+}
+
+#layers h3
+{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.layer p
+{
+    display: inline-block;
+}
+
+.layer input
+{
+    display: inline-block;
+}
+
+#layer-name
+{
+    position: absolute;
+    margin-left: 1425px;
+    margin-top: -600px;
+    background-color: red;
+    z-index: 2;
+}
+
+#tututu
+{
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    margin-top: -800px;
+    height: 8000px;
+    width: 8000px;
+    opacity: .5;
+}

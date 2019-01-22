@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="group-canvas">
+        <canvas id="my_paint" width="900" height="500">
+        </canvas>
+    </div>
+
+    <div id="tools">
+        <ul>
+            <li>
+                <button id="symetrie">
+                    <img src="http://modulo-n.fr/wp-content/uploads/2017/04/symetrie-axiale5.png" alt="une image">
+                </button>
+            </li>
+            <li>
+                <button id="save-symetrie">Save the symetrie</button>
+            </li>
+            <li>
+                <a href="#">
+                    <img id="crayon" src="http://outils.evangile.ca/ClipArts/Bureau/original/crayon.png" alt="une image">
+                </a>
+            </li>
+            <li>
+                <button id="line">Line</button>
+            </li>
+            <li>
+                <button id="rectangle">Rectangle</button>
+            </li>
+            <li>
+                <button id="background-rectangle">fill rectangle</button>
+            <li>
+            <li>
+                <button id="circle">cercle</button>
+            </li>
+            <li>
+                <button id="background-circle">fill cercle</button>
+            <li>
+                <button id="rubber">
+                    <img src="http://pngimages.net/sites/default/files/eraser-png-image-9310.png" alt="une image">
+                </button>
+            </li>
+        </ul>
+
+    </div>
+    <div id="group-options">
+    </div>
+
+    <input id="panel-color" type ="color">
+    <select id="select-size">
+        <script>
+            var selectSize = document.getElementById('select-size');
+
+            for(var i = 1; i <= 64; i++)
+            {
+                var option = document.createElement("option");
+                option.text = i;
+                selectSize.appendChild(option);
+            }
+        </script>
+    </select>
+
+    <div id="layers">
+        <h3>Calques</h3>
+        <div id="group-layers">
+        </div>
+        <div id="layers-options">
+            <a id="add-layer" href="#">add</a>
+        </div>
+    </div>
+
+    <div id="tututu" style='display:none'>
+
+    </div>
+
+    <div id="layer-name" style='display:none'>
+        <label>Nom du calque</label>
+        <input id="input-layer" maxlength="15"/>
+        <button id="add">ajouter</button>
+    </div>
+</body>
+</html>
